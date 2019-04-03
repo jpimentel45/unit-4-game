@@ -1,0 +1,62 @@
+header {
+    background-color: red;
+    width: 30%;
+    height: 60px;
+position: relative;
+}
+
+h1 {
+    position: absolute;
+    left: 22px;
+    bottom: 20px;
+    font-size: 22px;
+    color: orange;
+}
+.text-container {
+    
+        color: yellow;
+        width: 50%;
+        background-color: green;
+        height: 240px;
+    
+}
+.generatedNumber {
+    width: 29%;
+    background-color: blue;
+    height: 86px;
+}
+.winLose {
+    
+        position: absolute;
+        background-color: purple;
+        width: 20%;
+        height: 82px;
+        left: 195px;
+        bottom: -23px;
+    
+}
+.crystal1{
+    background: blue;
+    width: 20%;
+    height: 120px;
+}
+.crystal2{
+    background: red;
+    width: 20%;
+    height: 120px;
+}
+.crystal3{
+    background: orange;
+    width: 20%;
+    height: 120px;
+}
+.crystal4{
+    background: green;
+    width: 20%;
+    height: 120px;
+}
+
+.currentNum {
+    background-color: rebeccapurple;
+    height: 200px;
+}
