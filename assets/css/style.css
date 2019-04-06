@@ -3,60 +3,170 @@ header {
     width: 30%;
     height: 60px;
 position: relative;
+margin-bottom: 10px;
 }
-
+body {
+    background-image: url("../images/clear\ rain.gif");
+}
+.headerFont {
+font-size: 40px;
+}
 h1 {
     position: absolute;
     left: 22px;
     bottom: 20px;
-    font-size: 22px;
     color: orange;
 }
 .text-container {
-    
-        color: yellow;
+    font-size:25px;
+        color: black;
         width: 50%;
-        background-color: green;
+        background-color: black;
         height: 240px;
-    
+        margin-bottom: 10px;
+        margin-top: 10px;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
 }
-.generatedNumber {
-    width: 29%;
-    background-color: blue;
-    height: 86px;
+
+.Box{
+    margin-bottom: 10px;
+}
+.generatedNum {
+   float: left;
+    background-color: magenta;
+    width: 20%;
+    height: 82px;
+    left: 195px;
+    bottom: -27px;
+    font-size: 90px;
 }
 .winLose {
-    
-        position: absolute;
-        background-color: purple;
-        width: 20%;
-        height: 82px;
-        left: 195px;
-        bottom: -23px;
+    margin-left: 290px;
+    background-color: purple;
+    width: 150px;
+    height: 82px;
+    bottom: -23px;
+    text-align: center;
+}
+.wins, .losses {
+    margin-top: 10px;
+    font-size: 30px;
     
 }
+
+.crystals{
+    width:690px;
+    margin-bottom: 10px;
+    background-image:url("../images/stars.gif");
+}
+
 .crystal1{
-    background: blue;
+    margin-left:40px;
+    margin-right:20px;
     width: 20%;
     height: 120px;
+    display:inline-flex;
+    animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  /* transform: rotate(3deg); */
+   /* transform: rotate(0.3rad);/ */
+   /* transform: rotate(3grad); */ 
+   /* transform: rotate(.03turn);  */
 }
+
+
 .crystal2{
-    background: red;
+    margin-right:20px;
+    display:inline-flex;
     width: 20%;
     height: 120px;
+    animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
 }
 .crystal3{
-    background: orange;
+    margin-right:20px;
+    display:inline-flex;
     width: 20%;
     height: 120px;
+    animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
 }
 .crystal4{
-    background: green;
+    display:inline-flex;
     width: 20%;
     height: 120px;
+    animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+     } /*if you interchange the values it will spin opposite */
+    to {
+        transform:rotate(360deg);
+    }
+
 }
 
 .currentNum {
     background-color: rebeccapurple;
     height: 200px;
 }
+img { 
+    max-width:100%;
+max-height:100%;
+align-content: center;
+
+}
+#Amethyst {
+    margin-left: 25px;
+}
+#Garnet {
+    width: 50%;
+    margin-left: 30px;
+}
+#Pearl {
+    margin-left: 25px;
+}
+#Steven {
+    margin-left: 10px;
+}
+#scoreContainer {
+    height:100px;
+    width: 50%;
+    background-image: url("../images/glitterconfetti.gif");
+}
+p1 {
+    color: red;
+    font-size: 50px;
+}
+
+/* The animation code */
+@keyframes example {
+    0%   {background-color: red;}
+    10%   {background-color: orange;}
+    20%  {background-color: yellow;}
+    30%  {background-color: ;}
+    40% {background-color: ;}
+    50%   {background-color: ;}
+    60%   {background-color: magenta;}
+    70%   {background-color: ;}
+    80%   {background-color: chartreuse;}
+    90%   {background-color: turquoise;}
+    100%   {background-color:fuchsia;}
+  }
+
+  
+  
