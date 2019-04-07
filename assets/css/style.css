@@ -1,52 +1,62 @@
+* {
+    box-sizing: border-box;
+  }
 header {
     background-color: red;
-    width: 30%;
+    width: 22%;
     height: 60px;
 position: relative;
 margin-bottom: 10px;
+background-color: red;
+animation-name: example;
+animation-duration: 10s;
+animation-iteration-count: infinite;
 }
 body {
+    text-size-adjust: inherit;
     background-image: url("../images/clear\ rain.gif");
 }
 .headerFont {
-font-size: 40px;
+    font-family: 'Fascinate Inline', cursive;
+    text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc,1px 1px 20px rgb(123, 248, 6),2px 2px 30px rgb(133, 255, 11);
+    font-size: 30px;
 }
 h1 {
     position: absolute;
-    left: 22px;
-    bottom: 20px;
-    color: orange;
+    left: 8px;
+    bottom: 15px;
+    color: rgb(255, 0, 0);
 }
 .text-container {
-    font-size:25px;
-        color: black;
+    font-family: 'Concert One', cursive;
+    text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc,1px 1px 20px rgb(123, 248, 6),2px 2px 30px rgb(133, 255, 11);
+    font-size:23px;
+        color: rgb(255, 255, 255);
         width: 50%;
         background-color: black;
-        height: 240px;
+        height: 380px;
         margin-bottom: 10px;
         margin-top: 10px;
-        background-color: red;
-        animation-name: example;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
+   line-height: 1.1;
 }
 
-.Box{
-    margin-bottom: 10px;
-}
 .generatedNum {
    float: left;
-    background-color: magenta;
+   background:#111;
+   color:#fff;
+   text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+   font-size:78px;
+   text-align:center;
     width: 20%;
     height: 82px;
-    left: 195px;
-    bottom: -27px;
-    font-size: 90px;
+    
 }
 .winLose {
     margin-left: 290px;
-    background-color: purple;
-    width: 150px;
+    background:#111;
+    color:chartreuse;
+    text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+    width: 10%;
     height: 82px;
     bottom: -23px;
     text-align: center;
@@ -58,8 +68,7 @@ h1 {
 }
 
 .crystals{
-    width:690px;
-    margin-bottom: 10px;
+    width:50%;
     background-image:url("../images/stars.gif");
 }
 
@@ -144,29 +153,55 @@ align-content: center;
     margin-left: 10px;
 }
 #scoreContainer {
-    height:100px;
+    height:50px;
     width: 50%;
     background-image: url("../images/glitterconfetti.gif");
 }
 p1 {
+    text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc,1px 1px 20px rgb(123, 248, 6),2px 2px 30px rgb(133, 255, 11);
     color: red;
-    font-size: 50px;
+    font-size: 45px;
 }
 
 /* The animation code */
 @keyframes example {
-    0%   {background-color: red;}
-    10%   {background-color: orange;}
-    20%  {background-color: yellow;}
-    30%  {background-color: ;}
-    40% {background-color: ;}
-    50%   {background-color: ;}
-    60%   {background-color: magenta;}
-    70%   {background-color: ;}
+    0%   {background-color: ;}
+    10%   {background-color: black;}
+    20%  {background-color: gold;}
+    30%  {background-color:black ;}
+    40% {background-color:rgb(255, 13, 154); ;}
+    50%   {background-color:black;}
+    60%   {background-color: rgb(255, 0, 0);}
+    70%   {background-color: black;}
     80%   {background-color: chartreuse;}
-    90%   {background-color: turquoise;}
-    100%   {background-color:fuchsia;}
+    90%   {background-color: black;}
+    100%   {background-color:rgb(17, 21, 255);}
   }
 
+  .totalScore {
+    background:#111;
+    color:#fff;
+    text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc, 1px 1px 10px rgb(77, 255, 7);
+    font-size:54px;
+    text-align:center;
+    height:50px;
+    margin-top: 10px;
+   
+    width: 50%;
   
-  
+}  
+
+p {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
